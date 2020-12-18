@@ -1,0 +1,17 @@
+﻿@model Assignment_05.Models.Teacher
+@{
+    ViewBag.Title = "Show";
+}
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back To Teachers</a>
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.teacherid">Delete</a>
+        <a class="navlink" href="/Teacher/Update/@Model.teacherid">Update</a>
+
+    </nav>
+    <h1>@Model.teacherfname @Model.teacherlname</h1>
+    <p><strong>Employee Number:</strong>  @Model.employeenumber</p>
+    <p><strong>Hire Date:</strong>  @Model.hiredate.ToString("dd-MMM-yyyy")</p>
+    <p><strong>Salary:</strong>  @Model.salary</p>
+
+</div>
